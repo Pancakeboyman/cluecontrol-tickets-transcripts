@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ClueControl Support — bug-report-0002</title>
+<link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1363556047704293517/1457159484538355877/--ClueControl-Utils-.png?ex=695afd05&is=6959ab85&hm=3c0bb50c3d4cb17a1d62b847347ef59c2f8acc710dd5da0fa3aa140a26d56511&=&quality=lossless" />
+<script>window.$discordMessage={profiles:{"1420476444412346388":{"author":"ClueControl Utils","avatar":"https://cdn.discordapp.com/avatars/1420476444412346388/25e11cde6998349c7dc7e3d77e0fc21d.webp","roleColor":"#ffffff","roleIcon":"","roleName":"ClueControl Bots","bot":true,"verified":false},"1034529880492232764":{"author":"_artyrio_","avatar":"https://cdn.discordapp.com/avatars/1034529880492232764/45e2d8dc9ced2b603b7082dbc886f0f3.webp","roleColor":"#ffffff","roleIcon":"","roleName":"User","bot":false,"verified":false},"994164698654187580":{"author":"yeolkaa","avatar":"https://cdn.discordapp.com/avatars/994164698654187580/3f372e3b7871841a0098bb01bdf586dc.webp","roleColor":"#ffffff","roleIcon":"","roleName":"User","bot":false,"verified":false},"1133665013794607114":{"author":"Pancakeboyman_8","avatar":"https://cdn.discordapp.com/avatars/1133665013794607114/1961da5b22b2893186f54433f2a45072.webp","roleColor":"#ffffff","roleIcon":"","roleName":"English","bot":false,"verified":false}}};</script>
+<style>
+body { background: #36393f; color: #dcddde; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; }
+#lightboxOverlay { display:none; position:fixed; left:0; top:0; right:0; bottom:0; width:100vw; height:100vh; z-index:99999; background: rgba(30,30,30,0.85); align-items:center; justify-content:center; transition: background 0.2s; }
+#lightboxOverlay img, #lightboxImg { max-width:90vw; max-height:90vh; object-fit:contain; border-radius:6px; box-shadow: 0 4px 20px rgba(0,0,0,0.6); background:#222; display:block; margin:auto; }
+discord-reactions { display:flex; flex-wrap:wrap; gap:2px; margin-top:8px; }
+discord-reaction { display:inline-flex; align-items:center; border-radius:6px; margin-right:2px; padding:2px 4px; font-size:14px; color:#dcddde; }
+discord-custom-emoji { vertical-align:middle; margin-right:4px; }
+</style>
+<script>
+document.addEventListener("click", t => {
+  let e = t.target;
+  if (!e) return;
+  let o = e.getAttribute && e.getAttribute("data-goto");
+  if (o) {
+    let r = document.getElementById(`m-${o}`);
+    if (r) {
+      r.scrollIntoView({behavior: "smooth", block: "center"});
+      r.style.backgroundColor = "rgba(148,156,247,0.1)";
+      r.style.transition = "background-color 0.5s ease";
+      setTimeout(() => { r.style.backgroundColor = "transparent"; }, 1000);
+    } else {
+      logger.warn("Message " + o + " not found.");
+    }
+  }
+  if (e.matches && e.matches("discord-attachment[type=image] img, .discord-image, img[data-lightbox]")) {
+    let src = e.getAttribute("src") || (e.querySelector && e.querySelector('img') ? e.querySelector('img').src : '');
+    if (src) {
+      let overlay = document.getElementById('lightboxOverlay');
+      let img = document.getElementById('lightboxImg');
+      overlay.style.display = 'flex';
+      img.src = src;
+    }
+  }
+});
+window.addEventListener("DOMContentLoaded", () => {
+  let overlay = document.getElementById('lightboxOverlay');
+  overlay && overlay.addEventListener('click', () => { overlay.style.display = 'none'; });
+});
+</script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@derockdev/discord-components-core@latest/dist/derockdev-discord-components-core/derockdev-discord-components-core.esm.js"></script>
+</head>
+<body>
+<div id="lightboxOverlay"><img id="lightboxImg" src="" alt="Preview"/></div>
+<discord-messages style="min-height:100vh">
+<discord-message author="ClueControl Support" avatar="https://cdn.discordapp.com/icons/1420465493722005659/9bd63768c60cc24f1406a572257aa860.webp" timestamp="2026-01-13T21:37:18.646Z">Ticket Closed.<br/>Reasom: Not specified<br/>Date: 14.01.2026, 00:37:18<br/><a href="https://Pancakeboyman.github.io/cluecontrol-tickets-transcripts/transcripts/bug-report-0002_01_13_2026_09:37:18_.html" style="color: #00aff4;">https://Pancakeboyman.github.io/cluecontrol-tickets-transcripts/transcripts/bug-report-0002_01_13_2026_09:37:18_.html</a></discord-message><discord-message id="m-1458204904307949775" timestamp="2026-01-06T21:05:41.324Z" profile="1420476444412346388">
+<discord-attachments slot="components"><discord-action-row></discord-action-row><discord-action-row><discord-button type="secondary">Button</discord-button><discord-button type="secondary">Button</discord-button><discord-button type="secondary">Button</discord-button><discord-button type="secondary">Button</discord-button></discord-action-row></discord-attachments>
+</discord-message>
+<discord-message id="m-1458207281853370398" timestamp="2026-01-06T21:15:08.175Z" profile="994164698654187580">
+Здравствуйте <img src="<a href="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f44b.svg"" style="color: #00aff4; text-decoration: underline;" target="_blank">https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f44b.svg"</a> alt="👋" class="emoji-img" style="height:18px;width:18px;vertical-align:middle;display:inline-block;" loading="lazy" onerror="this.style.display='none'"/> Меня зовут yeolka. Я главный модератор Discord Moscow Roleplay и Senior Support здесь.<br/>Сейчас, я рассмотрю ваш тикет. Если потребуется его кому-либо передать, я сообщу вам
+</discord-message>
+<discord-message id="m-1458207432357449944" timestamp="2026-01-06T21:15:44.058Z" profile="994164698654187580">
+По данным багам вам следует обращаться в основной сервер Moscow Roleplay
+</discord-message>
+<discord-message id="m-1458208237827395772" timestamp="2026-01-06T21:18:56.097Z" profile="994164698654187580">
+Спасибо за обращение, мы рассмотрим данный баг ( ошибку ) в функционале команд повышений и понижений
+</discord-message>
+<discord-message id="m-1458540738316079217" timestamp="2026-01-07T19:20:10.391Z" profile="1133665013794607114">
+<discord-mention type="user">Artyrio</discord-mention> поняли?
+</discord-message>
+<discord-message id="m-1458541491810079025" timestamp="2026-01-07T19:23:10.038Z" profile="1034529880492232764">
+да
+</discord-message>
+<discord-message id="m-1460749569074921576" timestamp="2026-01-13T21:37:16.682Z" profile="1420476444412346388">
+<discord-reply slot="reply" author="ClueControl Utils" avatar="https://cdn.discordapp.com/avatars/1420476444412346388/25e11cde6998349c7dc7e3d77e0fc21d.webp" role-color="#ffffff"><span data-goto="1458204904307949775">[deleted]</span></discord-reply>Are you sure you want to close this ticket?<discord-attachments slot="components"><discord-action-row><discord-button type="secondary">✅Close</discord-button><discord-button type="secondary">❌Cancel</discord-button></discord-action-row></discord-attachments>
+</discord-message>
+<discord-message id="m-1460749576746307847" timestamp="2026-01-13T21:37:18.511Z" profile="1420476444412346388">
+<discord-attachments slot="components"><discord-action-row></discord-action-row></discord-attachments>
+</discord-message>
+</discord-messages></body></html>
